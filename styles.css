@@ -1,0 +1,128 @@
+/* Color Palette: Gold (#B89B6C), Blue (#0F2CF9), Ivory (#fffff0) */
+
+:root {
+    --gold: #B89B6C;
+    --blue: #0F2CF9;
+    --ivory: #fffff0;
+    --text-dark: #333; /* For better readability on light backgrounds */
+}
+
+body {
+    font-family: 'Georgia', serif; /* Using a classic font for elegance */
+    background-color: var(--ivory);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    text-align: center;
+}
+
+.container {
+    max-width: 650px;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    border-top: 5px solid var(--gold); /* Gold line accent */
+}
+
+/* Logo Styling */
+.logo-container img {
+    max-width: 120px; /* Sizing the logo appropriately */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Typography */
+h1 {
+    color: var(--gold);
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tagline {
+    color: var(--text-dark);
+    font-size: 1.1em;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* New Key Message Styling */
+.key-message {
+    padding: 25px 0;
+    margin-bottom: 30px;
+    border-top: 1px solid rgba(184, 155, 108, 0.4); /* Light gold dividers */
+    border-bottom: 1px solid rgba(184, 155, 108, 0.4);
+}
+
+.key-message p {
+    font-size: 1.1em;
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.opening-soon {
+    color: var(--gold);
+    font-size: 2.2em;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Contact Information */
+.contact-info {
+    margin-top: 30px;
+    font-size: 0.95em;
+    color: #of2c59;
+}
+
+.contact-info a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.domain {
+    margin-top: 5px;
+    font-size: 0.85em;
+    color: #999;
+}
+
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 15px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .key-message p {
+        font-size: 1em;
+    }
+
+    .opening-soon {
+        font-size: 1.8em;
+    }
+}
