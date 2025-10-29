@@ -1,15 +1,18 @@
-/* Color Palette: Gold (#B89B6C), Blue (#0F2CF9), Ivory (#fffff0) */
+/* Color Palette: Light Gold (#c7a96b), Dark Gold (#a67c32), Blue (#0F2CF9), Ivory (#fffff0) */
 
 :root {
-    --gold: #B89B6C;
+    --gold-light: #c7a96b;  /* top gold from logo */
+    --gold-dark: #a67c32;   /* bottom dark gold from logo */
     --blue: #0F2CF9;
     --ivory: #fffff0;
-    --text-dark: #333; /* For better readability on light backgrounds */
+    --text-dark: #333;
 }
 
+/* Background & Page Layout */
 body {
-    font-family: 'Georgia', serif; /* Using a classic font for elegance */
-    background-color: var(--ivory);
+    font-family: 'Georgia', serif;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
     color: var(--text-dark);
     margin: 0;
     padding: 0;
@@ -20,25 +23,26 @@ body {
     text-align: center;
 }
 
+/* Transparent container for text content */
 .container {
     max-width: 650px;
     padding: 40px 30px;
-    background: #fff;
+    background: transparent;
     border-radius: 10px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
-    border-top: 5px solid var(--gold); /* Gold line accent */
+    box-shadow: none;
+    border: none;
 }
 
 /* Logo Styling */
 .logo-container img {
-    max-width: 120px; /* Sizing the logo appropriately */
+    max-width: 120px;
     height: auto;
     margin-bottom: 20px;
 }
 
 /* Typography */
 h1 {
-    color: var(--gold);
+    color: var(--gold-light); /* top gold tone */
     font-size: 2.8em;
     margin-bottom: 5px;
     letter-spacing: 2px;
@@ -47,7 +51,7 @@ h1 {
 }
 
 .tagline {
-    color: var(--text-dark);
+    color: #f2f2f2;
     font-size: 1.1em;
     font-style: italic;
     margin-top: 0;
@@ -55,23 +59,24 @@ h1 {
     font-weight: 300;
 }
 
-/* New Key Message Styling */
+/* Key Message Styling */
 .key-message {
     padding: 25px 0;
     margin-bottom: 30px;
-    border-top: 1px solid rgba(184, 155, 108, 0.4); /* Light gold dividers */
-    border-bottom: 1px solid rgba(184, 155, 108, 0.4);
+    border-top: 1px solid rgba(199, 169, 107, 0.3);
+    border-bottom: 1px solid rgba(199, 169, 107, 0.3);
 }
 
 .key-message p {
     font-size: 1.1em;
-    color: var(--text-dark);
+    color: #f8f8f8;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
+/* "Opening Soon" text */
 .opening-soon {
-    color: var(--gold);
+    color: var(--gold-dark); /* darker gold tone */
     font-size: 2.2em;
     margin: 0;
     font-weight: 700;
@@ -82,11 +87,11 @@ h1 {
 .contact-info {
     margin-top: 30px;
     font-size: 0.95em;
-    color: #of2c59;
+    color: #f8f8f8;
 }
 
 .contact-info a {
-    color: var(--gold);
+    color: var(--gold-light);
     text-decoration: none;
     font-weight: 600;
 }
@@ -98,11 +103,10 @@ h1 {
 .domain {
     margin-top: 5px;
     font-size: 0.85em;
-    color: #999;
+    color: #ccc;
 }
 
-
-/* Media Query for Mobile Responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 600px) {
     .container {
         padding: 30px 15px;
