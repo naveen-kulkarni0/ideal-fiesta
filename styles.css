@@ -1,8 +1,8 @@
 /* Color Palette: Light Gold (#c7a96b), Dark Gold (#a67c32), Blue (#0F2CF9), Ivory (#fffff0) */
 
 :root {
-    --gold-light: #c7a96b;  /* top gold from logo */
-    --gold-dark: #a67c32;   /* bottom dark gold from logo */
+    --gold-light: #e0c471;  /* top gold from logo */
+    --gold-dark: #e0c471;  /* bottom dark gold from logo */
     --blue: #0F2CF9;
     --ivory: #fffff0;
     --text-dark: #333;
