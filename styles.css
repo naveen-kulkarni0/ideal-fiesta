@@ -85,7 +85,7 @@ h1 {
   padding: 30px;
   border-radius: 8px;
   margin-bottom: 40px;
-  text-align: justify;
+  text-align: justify; /* Keeps it formal on Desktop */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 .about-doctor h3 {
@@ -104,48 +104,43 @@ h1 {
   color: var(--text-black);
   font-size: 0.95em;
   line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-/* CONTACT SECTION ALIGNMENT */
+/* Contact Section */
 .contact-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center; /* Centers the whole container block */
+  align-items: center;
   margin-bottom: 40px;
 }
-
 .contact-item {
   display: flex;
-  align-items: flex-start; /* Aligns icon with the top line of text */
+  align-items: flex-start;
   text-align: left;
   width: 100%;
-  max-width: 500px; /* Constrains the width so icons align vertically */
+  max-width: 480px;
 }
-
 .icon-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
   margin-right: 15px;
-  padding-top: 3px; /* Micro-adjustment to center icon with text cap-height */
+  padding-top: 4px;
 }
-
 .icon {
   width: 20px;
   height: 20px;
   fill: var(--gold-light);
 }
-
 .contact-text {
   color: #ffffff !important;
   text-decoration: none;
   font-size: 1em;
   line-height: 1.5;
-  word-wrap: break-word;
 }
 
 /* Footer */
@@ -156,7 +151,6 @@ h1 {
 }
 .instagram-link {
   color: var(--gold-light);
-  transition: 0.3s;
 }
 .domain {
   color: #ccc;
@@ -165,6 +159,7 @@ h1 {
   margin-top: 20px;
 }
 
+/* MOBILE FIXES */
 @media (max-width: 600px) {
   h1 {
     font-size: 1.8em;
@@ -172,7 +167,18 @@ h1 {
   .opening-soon {
     font-size: 1.6em;
   }
+
+  .about-doctor {
+    padding: 20px;
+    text-align: left; /* Removes the huge gaps between words on mobile */
+  }
+
+  .bio-content p {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
   .contact-item {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
