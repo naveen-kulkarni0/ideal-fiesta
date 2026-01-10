@@ -106,43 +106,45 @@ h1 {
   line-height: 1.6;
 }
 
-/* FIXED CONTACT ALIGNMENT */
+/* CONTACT SECTION ALIGNMENT */
 .contact-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center; /* Centers the whole block */
+  align-items: center; /* Centers the whole container block */
   margin-bottom: 40px;
 }
 
 .contact-item {
   display: flex;
   align-items: flex-start; /* Aligns icon with the top line of text */
-  text-align: left; /* Aligns text relative to the icon */
-  max-width: 90%;
+  text-align: left;
+  width: 100%;
+  max-width: 500px; /* Constrains the width so icons align vertically */
 }
 
 .icon-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  margin-right: 12px; /* The identical gap you want */
+  margin-right: 15px;
+  padding-top: 3px; /* Micro-adjustment to center icon with text cap-height */
 }
 
 .icon {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   fill: var(--gold-light);
 }
 
 .contact-text {
   color: #ffffff !important;
   text-decoration: none;
-  font-size: 0.95em;
-  line-height: 1.4;
+  font-size: 1em;
+  line-height: 1.5;
   word-wrap: break-word;
 }
 
@@ -171,6 +173,6 @@ h1 {
     font-size: 1.6em;
   }
   .contact-item {
-    max-width: 320px;
-  } /* Ensures the address wraps nicely on phones */
+    max-width: 90%;
+  }
 }
