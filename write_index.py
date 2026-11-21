@@ -1,0 +1,559 @@
+new_content = """<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rivanta Dental - Dentofacial Rehabilitation and Implant Centre. Functional Precision | Timeless Aesthetics | Lasting Confidence. Book your consultation with Dr. Ritika Jeenoor, Prosthodontist and Implantologist." />
+    <title>Rivanta Dental — Dentofacial Rehabilitation & Implant Centre</title>
+    <link rel="icon" type="image/png" href="Rivanta_Dental_png-removebg-preview.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+        <!-- Skip to main content for accessibility -->
+        <a href="#main" class="skip-link">Skip to main content</a>
+
+        <!-- Background ambient layers -->
+        <div class="ambient-bg" aria-hidden="true">
+          <div class="ambient-orb"></div>
+          <div class="grid-overlay"></div>
+        </div>
+
+        <main id="main" class="main-content">
+      <!-- Header / Hero Section -->
+      <header class="hero" role="banner">
+        <div class="hero-inner">
+          <div class="logo-block" aria-hidden="true">
+            <img src="Rivanta_Dental_png-removebg-preview.png" alt="" class="logo-mark" width="80" height="80" loading="eager" />
+            <div class="logo-glow"></div>
+          </div>
+          
+          <div class="hero-text">
+            <p class="hero-tagline" data-reveal>Dentofacial Rehabilitation & Implant Centre</p>
+            <h1 class="hero-title" data-reveal="clip"><span>RIVANTA</span> <span>DENTAL</span></h1>
+            <p class="hero-motto" data-reveal>Functional Precision · Timeless Aesthetics · Lasting Confidence</p>
+            <p class="hero-credentials" data-reveal>
+              Dr. Ritika Jeenoor, BDS, MDS (Prosthodontics), Fellowship in Oral Implantology — Reg. No. KSDC-XXXXX, Karnataka State Dental Council
+            </p>
+          </div>
+
+          <div class="hero-status" data-reveal>
+            <span class="status-badge">
+              <span class="status-dot" aria-hidden="true"></span>
+              Now Open
+            </span>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 5v14M19 12l-7 7-7-7"/>
+          </svg>
+        </div>
+      </header>
+
+      <!-- Primary CTA Section -->
+      <section class="cta-primary" aria-labelledby="cta-heading">
+        <div class="cta-inner">
+          <h2 id="cta-heading" class="visually-hidden">Book Your Consultation</h2>
+          <a 
+            href="https://click4appointment.com/clinic-details/rivantadental:dentofacialrehabilitationandimplantcentre-4580" 
+            class="btn btn-primary" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            data-reveal
+          >
+            <span class="btn-text">Book a Consultation</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <p class="cta-subtext" data-reveal>Personalized care from consultation to completion</p>
+          <p class="cta-disclaimer" data-reveal>Redirects to our secure booking partner. Consultation fee: ₹500 (adjusted against treatment).</p>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" aria-labelledby="services-heading">
+        <div class="section-inner">
+          <header class="section-header" data-reveal>
+            <span class="section-tag">Our Expertise</span>
+            <h2 id="services-heading" class="section-title">Treatments We Offer</h2>
+            <p class="section-subtitle">Advanced prosthodontics and implantology delivered through digital workflows and evidence-based protocols</p>
+          </header>
+
+          <div class="services-grid" role="list">
+            <article class="service-card" data-reveal>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Dental Implants</h3>
+              <p class="service-desc">Single, multiple, and full-arch implants with guided surgery for predictable outcomes</p>
+              <ul class="service-features" aria-label="Implant treatment features">
+                <li>Guided implant surgery (CBCT + intraoral scan)</li>
+                <li>Immediate loading where indicated</li>
+                <li>All-on-4 / All-on-6 full arch solutions</li>
+                <li>Bone grafting & sinus augmentation</li>
+              </ul>
+              <a href="#contact" class="service-link" data-smooth-scroll>Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Prosthodontics</h3>
+              <p class="service-desc">Crowns, bridges, and dentures crafted for function, aesthetics, and longevity</p>
+              <ul class="service-features" aria-label="Prosthodontic treatment features">
+                <li>All-ceramic & zirconia crowns (monolithic & layered)</li>
+                <li>Implant-supported fixed prostheses</li>
+                <li>Precision attachment dentures</li>
+                <li>Full-mouth rehabilitation</li>
+              </ul>
+              <a href="#contact" class="service-link" data-smooth-scroll>Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M9 11l1 6"/><path d="M15 11l-1 6"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Digital Dentistry</h3>
+              <p class="service-desc">CBCT, intraoral scanning, 3D printing, and CAD/CAM for precision and comfort</p>
+              <ul class="service-features" aria-label="Digital dentistry features">
+                <li>Cone Beam CT (CBCT) — low-dose 3D imaging</li>
+                <li>PrimeScan intraoral scanner — no impressions</li>
+                <li>In-house 3D printing (surgical guides, models)</li>
+                <li>Exocad / 3Shape CAD/CAM design</li>
+              </ul>
+              <a href="#contact" class="service-link" data-smooth-scroll>Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Aesthetic Dentistry</h3>
+              <p class="service-desc">Veneers, whitening, and smile design for natural, harmonious results</p>
+              <ul class="service-features" aria-label="Aesthetic treatment features">
+                <li>Minimal-prep porcelain veneers</li>
+                <li>Digital smile design (DSD) preview</li>
+                <li>Professional whitening (in-office & take-home)</li>
+                <li>Gingival contouring & pink aesthetics</li>
+              </ul>
+              <a href="#contact" class="service-link" data-smooth-scroll>Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <h3 class="service-title">TMJ & Occlusal Therapy</h3>
+              <p class="service-desc">Diagnosis and management of TMD, bruxism, and bite disorders</p>
+              <ul class="service-features" aria-label="TMJ treatment features">
+                <li>Comprehensive occlusal analysis</li>
+                <li>Custom occlusal splints / night guards</li>
+                <li>Botox for masseter hypertrophy (therapeutic)</li>
+                <li>Multidisciplinary coordination</li>
+              </ul>
+              <a href="#contact" class="service-link" data-smooth-scroll>Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <h3 class="service-title">Preventive & Maintenance</h3>
+              <p class="service-desc">Long-term care to protect your investment and oral health</p>
+              <ul class="service-features" aria-label="Preventive care features">
+                <li>Professional cleaning & periodontal maintenance</li>
+                <li>Implant maintenance protocols</li>
+                <li>Occlusal check & splint adjustment</li>
+                <li>Recall scheduling & reminders</li>
+              </ul>
+              <a href="#contact" class="service-link" data-smooth-scroll>Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Doctor Section -->
+      <section class="about-doctor" aria-labelledby="doctor-heading">
+        <div class="section-inner">
+          <header class="section-header" data-reveal>
+            <span class="section-tag">Our Specialist</span>
+            <h2 id="doctor-heading" class="section-title">Meet Dr. Ritika Jeenoor</h2>
+            <p class="section-subtitle">Prosthodontist & Implantologist — BDS, MDS (Prosthodontics), Fellowship in Oral Implantology, Reg. No. KSDC-XXXXX, Karnataka State Dental Council</p>
+          </header>
+
+          <div class="doctor-card" data-reveal>
+            <div class="doctor-avatar" aria-hidden="true">
+              <div class="avatar-ring"></div>
+              <img src="Rivanta_Dental_png-removebg-preview.png" alt="Dr. Ritika Jeenoor" class="avatar-photo" width="280" height="280" loading="lazy" />
+            </div>
+            
+            <div class="doctor-content">
+              <div class="doctor-credentials">
+                <span class="credential">
+                  <span class="credential-icon" aria-hidden="true"></span>
+                  M.D.S. Prosthodontics — M.S. Ramaiah Dental College (Top of Class)
+                  <span class="credential-reg">Reg. No. KSDC-XXXXX</span>
+                </span>
+                <span class="credential">
+                  <span class="credential-icon" aria-hidden="true"></span>
+                  Fellowship in Oral Implantology — Asian Institute of Advanced Dentistry
+                </span>
+                <span class="credential">
+                  <span class="credential-icon" aria-hidden="true"></span>
+                  Certified — International Open Medvarsity, Hong Kong
+                </span>
+              </div>
+
+              <div class="doctor-bio">
+                <p>
+                  Dr. Ritika Jeenoor is a Prosthodontist and Implantologist passionate about helping patients restore their smiles and confidence. She specializes in dental implants, crowns, and dentures, offering comprehensive solutions for missing or damaged teeth.
+                </p>
+                <p>
+                  She graduated at the top of her M.D.S. specialty from M.S. Ramaiah Dental College and completed a Fellowship in Oral Implantology at the Asian Institute of Advanced Dentistry, with certification from the International Open Medvarsity, Hong Kong. She founded Rivanta Dental to help patients regain comfort, function, and a smile they can feel confident about.
+                </p>
+              </div>
+
+              <div class="doctor-philosophy" data-reveal>
+                <blockquote>
+                  <p>"Every smile tells a story. My mission is to make yours one of confidence."</p>
+                  <cite>— Dr. Ritika Jeenoor</cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology Section -->
+      <section class="technology" aria-labelledby="tech-heading">
+        <div class="section-inner">
+          <header class="section-header" data-reveal>
+            <span class="section-tag">Our Technology</span>
+            <h2 id="tech-heading" class="section-title">Digital Precision, Clinical Excellence</h2>
+            <p class="section-subtitle">Investing in technology that improves accuracy, reduces treatment time, and enhances your comfort</p>
+          </header>
+
+          <div class="tech-grid" role="list">
+            <article class="tech-item" data-reveal>
+              <div class="tech-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <h3 class="tech-title">CBCT 3D Imaging</h3>
+              <p class="tech-desc">Low-dose Cone Beam CT for precise implant planning, nerve mapping, and bone assessment</p>
+            </article>
+            <article class="tech-item" data-reveal>
+              <div class="tech-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <h3 class="tech-title">PrimeScan Intraoral Scanner</h3>
+              <p class="tech-desc">High-speed, powder-free digital impressions — no messy trays, superior accuracy</p>
+            </article>
+            <article class="tech-item" data-reveal>
+              <div class="tech-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M9 11l1 6"/><path d="M15 11l-1 6"/>
+                </svg>
+              </div>
+              <h3 class="tech-title">In-House 3D Printing</h3>
+              <p class="tech-desc">Surgical guides, try-in models, and temporary restorations fabricated on-site</p>
+            </article>
+            <article class="tech-item" data-reveal>
+              <div class="tech-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/>
+                </svg>
+              </div>
+              <h3 class="tech-title">Guided Implant Surgery</h3>
+              <p class="tech-desc">CBCT + scan integration for fully guided, minimally invasive implant placement</p>
+            </article>
+            <article class="tech-item" data-reveal>
+              <div class="tech-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <h3 class="tech-title">Exocad CAD/CAM Design</h3>
+              <p class="tech-desc">Advanced prosthetic design for crowns, bridges, and full-arch restorations</p>
+            </article>
+            <article class="tech-item" data-reveal>
+              <div class="tech-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <h3 class="tech-title">Sterilization Protocol</h3>
+              <p class="tech-desc">Class B autoclave, single-use instruments, dedicated sterilization zone — documented traceability</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Patient Journey Section -->
+      <section class="patient-journey" aria-labelledby="journey-heading">
+        <div class="section-inner">
+          <header class="section-header" data-reveal>
+            <span class="section-tag">Your Visit</span>
+            <h2 id="journey-heading" class="section-title">What to Expect</h2>
+            <p class="section-subtitle">A clear, step-by-step journey from your first consultation to long-term maintenance</p>
+          </header>
+
+          <div class="journey-steps" role="list">
+            <article class="journey-step" data-reveal>
+              <div class="step-number" aria-hidden="true">01</div>
+              <div class="step-content">
+                <h3 class="step-title">Book & Prepare</h3>
+                <p class="step-desc">Schedule online or call us. Bring any previous X-rays, medical history, and a list of medications. We'll send intake forms digitally to save time.</p>
+              </div>
+            </article>
+            <article class="journey-step" data-reveal>
+              <div class="step-number" aria-hidden="true">02</div>
+              <div class="step-content">
+                <h3 class="step-title">Comprehensive Consultation</h3>
+                <p class="step-desc">60-minute visit: clinical exam, CBCT scan, intraoral scan, photos, and discussion of your goals. No pressure — just thorough understanding.</p>
+              </div>
+            </article>
+            <article class="journey-step" data-reveal>
+              <div class="step-number" aria-hidden="true">03</div>
+              <div class="step-content">
+                <h3 class="step-title">Personalized Treatment Plan</h3>
+                <p class="step-desc">Receive a detailed digital plan with options, timeline, and transparent fees. We explain every step. You decide what's right for you.</p>
+              </div>
+            </article>
+            <article class="journey-step" data-reveal>
+              <div class="step-number" aria-hidden="true">04</div>
+              <div class="step-content">
+                <h3 class="step-title">Precise Treatment</h3>
+                <p class="step-desc">Digital workflows, guided surgery, and in-house fabrication for predictable results. Comfort options include topical anesthetic and sedation if needed.</p>
+              </div>
+            </article>
+            <article class="journey-step" data-reveal>
+              <div class="step-number" aria-hidden="true">05</div>
+              <div class="step-content">
+                <h3 class="step-title">Review & Maintain</h3>
+                <p class="step-desc">Post-treatment review at 1 week, 1 month, 3 months. Then customized recall schedule. Your long-term success is our responsibility.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="journey-faq" data-reveal>
+            <h3 class="journey-faq-title">Common Questions</h3>
+            <dl class="faq-list">
+              <div class="faq-item">
+                <dt class="faq-question"><button type="button" aria-expanded="false" aria-controls="faq-1">Is the consultation fee adjustable against treatment?</button></dt>
+                <dd id="faq-1" class="faq-answer" hidden>Yes. The ₹500 consultation fee is fully adjusted against any treatment you proceed with at Rivanta Dental.</dd>
+              </div>
+              <div class="faq-item">
+                <dt class="faq-question"><button type="button" aria-expanded="false" aria-controls="faq-2">Do you offer EMI / financing options?</button></dt>
+                <dd id="faq-2" class="faq-answer" hidden>Yes, we partner with leading healthcare financing providers for no-cost EMI options. Details shared during treatment planning.</dd>
+              </div>
+              <div class="faq-item">
+                <dt class="faq-question"><button type="button" aria-expanded="false" aria-controls="faq-3">What if I have dental anxiety?</button></dt>
+                <dd id="faq-3" class="faq-answer" hidden>We understand. Please let us know — we offer topical anesthetics, detailed explanations, breaks during treatment, and can discuss sedation options.</dd>
+              </div>
+              <div class="faq-item">
+                <dt class="faq-question"><button type="button" aria-expanded="false" aria-controls="faq-4">How long do implants last?</button></dt>
+                <dd id="faq-4" class="faq-answer" hidden>With proper maintenance, dental implants can last 20+ years. We provide a personalized maintenance protocol and 5-year warranty on implant fixtures (terms apply).</dd>
+              </div>
+              <div class="faq-item">
+                <dt class="faq-question"><button type="button" aria-expanded="false" aria-controls="faq-5">Do you accept insurance / CGHS / TPA?</button></dt>
+                <dd id="faq-5" class="faq-answer" hidden>We assist with claim submission for major TPAs and corporate plans. CGHS / ECHS patients welcome — please bring your card and referral.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Indicators -->
+      <section class="trust-indicators" aria-labelledby="trust-heading">
+        <div class="section-inner">
+          <h2 id="trust-heading" class="visually-hidden">Our Commitment</h2>
+          <ul class="trust-grid" role="list">
+            <li class="trust-item" data-reveal>
+              <div class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/>
+                </svg>
+              </div>
+              <h3 class="trust-title">Precision Dentistry</h3>
+              <p class="trust-desc">Digital workflows & evidence-based protocols</p>
+            </li>
+            <li class="trust-item" data-reveal>
+              <div class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M9 11l1 6"/><path d="M15 11l-1 6"/>
+                </svg>
+              </div>
+              <h3 class="trust-title">Implant Excellence</h3>
+              <p class="trust-desc">Advanced implantology with predictable outcomes</p>
+            </li>
+            <li class="trust-item" data-reveal>
+              <div class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <h3 class="trust-title">Patient-Centric Care</h3>
+              <p class="trust-desc">Personalized treatment plans for lasting results</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" aria-labelledby="contact-heading" id="contact">
+        <div class="section-inner">
+          <header class="section-header" data-reveal>
+            <span class="section-tag">Get In Touch</span>
+            <h2 id="contact-heading" class="section-title">Visit Us</h2>
+            <p class="section-subtitle">Conveniently located in North Bengaluru — 2nd Floor, RR Arcade, NTI Layout</p>
+          </header>
+
+          <div class="contact-grid" role="list">
+            <article class="contact-card" data-reveal>
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3 class="contact-label">Call Us</h3>
+                <a href="tel:+919071153020" class="contact-value">(+91) 90711 53020</a>
+                <span class="contact-hours">Mon–Sat: 10 AM – 7 PM</span>
+              </div>
+            </article>
+
+            <article class="contact-card" data-reveal>
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3 class="contact-label">Email Us</h3>
+                <a href="mailto:radiantsmiles@rivantadental.in" class="contact-value">radiantsmiles@rivantadental.in</a>
+                <span class="contact-hours">We respond within 24 hours</span>
+              </div>
+            </article>
+
+            <article class="contact-card" data-reveal>
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3 class="contact-label">Our Location</h3>
+                <address class="contact-value" style="font-style: normal;">
+                  <span>No. 65, 2nd Floor, RR Arcade</span><br>
+                  <span>NTI Layout 1st Phase, Kodigehalli Main Road</span><br>
+                  <span>Bengaluru — 560092</span>
+                </address>
+                <a href="https://maps.app.goo.gl/NLQdfMoaQirxR2i66" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 9 9 9 8 9"/>
+                  </svg>
+                  Get Directions
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="map-embed" data-reveal>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5123456789!2d77.593456!3d13.045678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167890abcdef%3A0xfedcba9876543210!2sRivanta%20Dental!5e0!3m2!1sen!2sin!4v1234567890" 
+              width="100%" 
+              height="300" 
+              style="border:0; border-radius: var(--radius-lg);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Rivanta Dental location on Google Maps">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secondary CTA -->
+      <section class="cta-secondary" aria-labelledby="cta2-heading">
+        <div class="section-inner">
+          <h2 id="cta2-heading" class="visually-hidden">Ready to Begin</h2>
+          <div class="cta2-content" data-reveal>
+            <h3 class="cta2-title">Ready to Restore Your Smile?</h3>
+            <p class="cta2-text">Schedule your personalized consultation with Dr. Ritika Jeenoor today.</p>
+            <a 
+              href="https://click4appointment.com/clinic-details/rivantadental:dentofacialrehabilitationandimplantcentre-4580" 
+              class="btn btn-secondary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Book Now
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-brand" data-reveal>
+          <img src="Rivanta_Dental_png-removebg-preview.png" alt="Rivanta Dental Logo" class="footer-logo" width="48" height="48" loading="lazy" />
+          <div class="footer-brand-text">
+            <p class="footer-name">RIVANTA DENTAL</p>
+            <p class="footer-tagline">Dentofacial Rehabilitation & Implant Centre</p>
+            <p class="footer-registration">Dr. Ritika Jeenoor, BDS, MDS (Prosthodontics) — Reg. No. KSDC-XXXXX, Karnataka State Dental Council</p>
+          </div>
+        </div>
+
+        <nav class="footer-social" aria-label="Social links">
+          <a href="https://www.instagram.com/rivanta_dental" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram" data-reveal>
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.353 2.62 6.77 6.98 6.97 1.28.057 1.688.071 4.948.071s3.667-.014 4.947-.072c4.351-.2 6.77-2.62 6.97-6.98.058-1.28.072-1.688.072-4.948s-.014-3.667-.072-4.947c-.2-4.351-2.62-6.77-6.98-6.97C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+          </a>
+        </nav>
+
+        <div class="footer-bottom" data-reveal>
+          <p class="copyright">© 2025 Rivanta Dental. All rights reserved.</p>
+          <p class="domain">rivantadental.in</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>"""
+
+with open('C:/Users/thena/project/Rivanta/ideal-fiesta/index.html', 'w', encoding='utf-8') as f:
+    f.write(new_content)
+print("Done")
