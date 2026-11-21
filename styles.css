@@ -1,87 +1,73 @@
 /* ==========================================================================
-   RIVANTA DENTAL — Clinical Professional Design System
-   Colors: Clean Ivory/White, Deep Navy, Emerald Green
+   RIVANTA DENTAL — Clinical Dark Design System
+   Colors: Deep Warm Gray, Emerald Green, Off-White
    Typography: Manrope (Headings), Inter (Body)
-   LIGHT MODE ONLY — Maximum accessibility for healthcare
+   DARK MODE — Healthcare calibrated, not luxury
    ========================================================================== */
 
 /* --- CSS Custom Properties (Design Tokens) --- */
 :root {
-  /* Brand Colors — Clinical Palette */
-  --color-navy-900: #061122;     /* Deep navy - primary brand */
-  --color-navy-800: #0c1d36;     /* Dark navy */
-  --color-navy-700: #132d4e;     /* Medium navy */
-  --color-navy-600: #1c3d66;     /* Lighter navy */
-  --color-navy-500: #284d7a;     /* Navy accent */
-  --color-navy-400: #3a6394;     /* Light navy */
-  --color-navy-300: #5a82b0;     /* Softer navy */
-  --color-navy-200: #8ab0cc;     /* Pale navy */
-  --color-navy-100: #bcd0e6;     /* Whisper navy */
-  --color-navy-50:  #ddeeff;     /* Tint navy */
+  /* Brand Colors — Clinical Dark Palette */
+  --color-gray-950: #0d1117;     /* Deepest background - near black but warm */
+  --color-gray-900: #161b22;     /* Primary background */
+  --color-gray-850: #1c232b;     /* Elevated surface */
+  --color-gray-800: #21262d;     /* Card background */
+  --color-gray-750: #2a2f38;     /* Hover/active surface */
+  --color-gray-700: #30363d;     /* Border/subtle elements */
+  --color-gray-600: #484f58;     /* Muted text placeholder */
+  --color-gray-500: #6e7681;     /* Secondary text */
+  --color-gray-400: #8b949e;     /* Tertiary text */
+  --color-gray-300: #c9d1d9;     /* Primary text */
+  --color-gray-200: #d0d7de;     /* Strong text */
+  --color-gray-100: #e6edf3;     /* Strongest text */
+  --color-gray-50:  #f0f6fc;     /* Near white */
 
-  --color-emerald-700: #03543d;  /* Deep emerald - primary action */
-  --color-emerald-600: #047857;  /* Standard emerald */
-  --color-emerald-500: #059669;  /* Bright emerald */
-  --color-emerald-400: #10b981;  /* Light emerald */
-  --color-emerald-300: #34d399;  /* Softer emerald */
-  --color-emerald-200: #6ee7b7;  /* Pale emerald */
-  --color-emerald-100: #a7f3d0;  /* Tint emerald */
-  --color-emerald-50:  #d1fae5;  /* Whisper emerald */
+  --color-emerald-700: #03543d;  /* Deep emerald - hover states */
+  --color-emerald-600: #047857;  /* Primary emerald - buttons, links */
+  --color-emerald-500: #059669;  /* Standard emerald */
+  --color-emerald-400: #10b981;  /* Light emerald - focus rings */
+  --color-emerald-300: #34d399;  /* Glow accent */
+  --color-emerald-200: #6ee7b7;  /* Subtle backgrounds */
+  --color-emerald-100: #a7f3d0;  /* Lighter backgrounds */
+  --color-emerald-50:  #d1fae5;  /* Whisper backgrounds */
 
-  --color-ivory-50:  #fefefb;    /* Pure ivory - page background */
-  --color-ivory-100: #f8f6f0;    /* Warm ivory - card background */
-  --color-ivory-200: #efece3;    /* Soft ivory - subtle borders */
-  --color-ivory-300: #e2decf;    /* Muted ivory - dividers */
-  --color-ivory-400: #d5d0bf;    /* Darker ivory - disabled */
-  
-  --color-white:     #ffffff;    /* Pure white - elevated cards */
-  --color-gray-900:  #111827;    /* Near black - primary text */
-  --color-gray-800:  #1f2937;    /* Dark gray - secondary text */
-  --color-gray-700:  #374151;    /* Medium gray - tertiary text */
-  --color-gray-600:  #4b5563;    /* Muted gray - placeholder */
-  --color-gray-500:  #6b7280;    /* Light gray - meta */
-  --color-gray-400:  #9ca3af;    /* Divider gray */
-  --color-gray-300:  #d1d5db;    /* Border gray */
-  --color-gray-200:  #e5e7eb;    /* Subtle border */
-  --color-gray-100:  #f3f4f6;    /* Background gray */
-  --color-gray-50:   #f9fafb;    /* Whisper gray */
-
-  /* Semantic Colors — LIGHT MODE ONLY */
-  --color-bg-primary: var(--color-ivory-50);
-  --color-bg-secondary: var(--color-ivory-100);
-  --color-bg-tertiary: var(--color-white);
-  --color-bg-card: var(--color-white);
-  --color-bg-card-hover: var(--color-ivory-100);
-  --color-bg-elevated: var(--color-white);
-  --color-bg-brand: var(--color-navy-900);
-  --color-bg-brand-hover: var(--color-navy-800);
+  /* Semantic Colors — CLINICAL DARK */
+  --color-bg-primary: var(--color-gray-900);
+  --color-bg-secondary: var(--color-gray-850);
+  --color-bg-tertiary: var(--color-gray-800);
+  --color-bg-card: var(--color-gray-800);
+  --color-bg-card-hover: var(--color-gray-750);
+  --color-bg-elevated: var(--color-gray-850);
+  --color-bg-brand: var(--color-emerald-600);
+  --color-bg-brand-hover: var(--color-emerald-700);
   --color-bg-accent: var(--color-emerald-600);
   --color-bg-accent-hover: var(--color-emerald-700);
-  --color-bg-accent-light: var(--color-emerald-50);
+  --color-bg-accent-light: rgba(16, 185, 129, 0.1);
   
-  --color-text-primary: var(--color-gray-900);
-  --color-text-secondary: var(--color-gray-700);
-  --color-text-tertiary: var(--color-gray-600);
+  --color-text-primary: var(--color-gray-100);
+  --color-text-secondary: var(--color-gray-300);
+  --color-text-tertiary: var(--color-gray-400);
   --color-text-muted: var(--color-gray-500);
-  --color-text-inverse: var(--color-white);
-  --color-text-brand: var(--color-navy-900);
-  --color-text-accent: var(--color-emerald-600);
-  --color-text-accent-hover: var(--color-emerald-700);
+  --color-text-inverse: var(--color-gray-900);
+  --color-text-brand: var(--color-emerald-400);
+  --color-text-accent: var(--color-emerald-400);
+  --color-text-accent-hover: var(--color-emerald-300);
   --color-text-on-brand: var(--color-white);
   --color-text-on-accent: var(--color-white);
   
-  --color-border-subtle: var(--color-gray-200);
-  --color-border-muted: var(--color-gray-300);
-  --color-border-default: var(--color-ivory-300);
-  --color-border-brand: var(--color-navy-900);
-  --color-border-accent: var(--color-emerald-600);
+  --color-border-subtle: rgba(208, 215, 222, 0.08);
+  --color-border-muted: rgba(208, 215, 222, 0.15);
+  --color-border-default: var(--color-gray-700);
+  --color-border-brand: var(--color-emerald-600);
+  --color-border-accent: var(--color-emerald-500);
   
   /* Gradients — Subtle, Purposeful */
-  --gradient-hero: linear-gradient(180deg, var(--color-ivory-50) 0%, var(--color-ivory-100) 100%);
-  --gradient-card: linear-gradient(180deg, var(--color-white) 0%, var(--color-ivory-100) 100%);
-  --gradient-brand: linear-gradient(135deg, var(--color-navy-900) 0%, var(--color-navy-700) 100%);
+  --gradient-hero: linear-gradient(180deg, var(--color-gray-900) 0%, var(--color-gray-950) 100%);
+  --gradient-card: linear-gradient(180deg, var(--color-gray-800) 0%, var(--color-gray-850) 100%);
+  --gradient-brand: linear-gradient(135deg, var(--color-emerald-600) 0%, var(--color-emerald-700) 100%);
   --gradient-accent: linear-gradient(135deg, var(--color-emerald-600) 0%, var(--color-emerald-700) 100%);
-  --gradient-accent-light: linear-gradient(135deg, var(--color-emerald-50) 0%, var(--color-emerald-100) 100%);
+  --gradient-accent-light: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(16, 185, 129, 0.04) 100%);
+  --gradient-emerald-glow: radial-gradient(ellipse at center, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
   
   /* Typography */
   --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -120,13 +106,14 @@
   --radius-2xl: 24px;
   --radius-full: 9999px;
   
-  /* Shadows — Clean, Subtle Depth */
-  --shadow-sm: 0 1px 2px rgba(17, 24, 39, 0.05);
-  --shadow-md: 0 4px 12px rgba(17, 24, 39, 0.08);
-  --shadow-lg: 0 12px 24px rgba(17, 24, 39, 0.1);
-  --shadow-xl: 0 20px 40px rgba(17, 24, 39, 0.12);
-  --shadow-inner: inset 0 1px 2px rgba(17, 24, 39, 0.05);
-  --shadow-focus: 0 0 0 3px rgba(5, 150, 105, 0.3);
+  /* Shadows — Layered Depth */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.45);
+  --shadow-inner: inset 0 1px 0 rgba(208, 215, 222, 0.05);
+  --shadow-focus: 0 0 0 3px rgba(16, 185, 129, 0.35);
+  --shadow-glow-emerald: 0 0 40px rgba(16, 185, 129, 0.15), 0 0 80px rgba(16, 185, 129, 0.05);
   
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -140,6 +127,7 @@
   
   /* Z-index */
   --z-bg: 0;
+  --z-bg-elevated: 5;
   --z-content: 10;
   --z-sticky: 100;
   --z-modal: 1000;
@@ -174,8 +162,10 @@ body {
   line-height: 1.7;
   color: var(--color-text-primary);
   background: var(--color-bg-primary);
-  background-image: var(--gradient-hero);
+  background-image: var(--gradient-hero), var(--gradient-emerald-glow);
   background-attachment: fixed;
+  background-position: center top, center 20%;
+  background-repeat: no-repeat;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -197,7 +187,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: var(--space-3) var(--space-6);
-  background: var(--color-navy-900);
+  background: var(--color-emerald-600);
   color: var(--color-white);
   font-family: var(--font-display);
   font-weight: 600;
@@ -210,8 +200,53 @@ body {
 
 /* Selection */
 ::selection {
-  background: var(--color-emerald-200);
-  color: var(--color-emerald-700);
+  background: var(--color-emerald-400);
+  color: var(--color-gray-900);
+}
+
+/* ==========================================================================
+   AMBIENT BACKGROUND — Subtle Single Glow
+   ========================================================================== */
+.ambient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-bg);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ambient-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(16, 185, 129, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Single subtle orb - no animation */
+.ambient-orb {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.04) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+}
+
+/* Fine grid overlay — very subtle */
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(208, 215, 222, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(208, 215, 222, 0.02) 1px, transparent 1px);
+  background-size: 100px 100px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%);
+  opacity: 0.4;
 }
 
 /* ==========================================================================
@@ -252,7 +287,7 @@ body {
 [data-reveal][style*="--delay"] { transition-delay: var(--delay); }
 
 /* ==========================================================================
-   HERO SECTION — Clean, Static, Readable
+   HERO SECTION — Clean, Grounded
    ========================================================================== */
 .hero {
   position: relative;
@@ -264,8 +299,6 @@ body {
   justify-content: center;
   padding: var(--space-20) var(--container-padding) var(--space-16);
   text-align: center;
-  background: linear-gradient(180deg, var(--color-ivory-50) 0%, var(--color-white) 100%);
-  border-bottom: 1px solid var(--color-border-subtle);
 }
 
 .hero-inner {
@@ -285,10 +318,10 @@ body {
   width: 100px;
   height: 100px;
   object-fit: contain;
-  filter: drop-shadow(0 4px 16px rgba(6, 17, 34, 0.08));
+  filter: drop-shadow(0 8px 32px rgba(16, 185, 129, 0.15));
 }
 
-.logo-glow { display: none; } /* Hidden in clinical mode */
+.logo-glow { display: none; }
 
 /* Hero Text */
 .hero-text { margin-bottom: var(--space-10); }
@@ -299,7 +332,7 @@ body {
   font-size: var(--text-lg);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-emerald-600);
+  color: var(--color-emerald-400);
   margin-bottom: var(--space-4);
 }
 
@@ -309,7 +342,7 @@ body {
   font-size: var(--text-5xl);
   line-height: 1.05;
   letter-spacing: -0.02em;
-  color: var(--color-text-brand);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-5);
 }
 
@@ -325,7 +358,7 @@ body {
 }
 
 .hero-motto .dot { 
-  color: var(--color-navy-400); 
+  color: var(--color-emerald-400); 
   margin: 0 var(--space-3); 
 }
 
@@ -339,21 +372,21 @@ body {
   align-items: center;
   gap: var(--space-2);
   padding: var(--space-2) var(--space-5);
-  background: var(--color-emerald-50);
-  border: 1px solid var(--color-emerald-200);
+  background: var(--color-bg-accent-light);
+  border: 1px solid rgba(16, 185, 129, 0.3);
   border-radius: var(--radius-full);
   font-family: var(--font-display);
   font-weight: 600;
   font-size: var(--text-sm);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-emerald-700);
+  color: var(--color-emerald-300);
 }
 
 .status-dot {
   width: 8px;
   height: 8px;
-  background: var(--color-emerald-500);
+  background: var(--color-emerald-400);
   border-radius: 50%;
   animation: status-pulse 2s ease-in-out infinite;
 }
@@ -363,8 +396,21 @@ body {
   50% { opacity: 0.5; }
 }
 
-/* Scroll Indicator — Hidden in clinical mode */
-.scroll-indicator { display: none; }
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: var(--space-8);
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-text-muted);
+  animation: scroll-bounce 2.5s ease-in-out infinite;
+  opacity: 0.4;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
 
 /* ==========================================================================
    BUTTONS — Clear, Accessible
@@ -384,22 +430,21 @@ body {
   transition: all var(--transition-base);
   position: relative;
   border-radius: var(--radius-full);
-  min-height: 52px; /* Touch target */
+  min-height: 52px;
 }
 
 .btn:active { transform: scale(0.98); }
 
 .btn-primary {
   padding: var(--space-4) var(--space-10);
-  background: var(--gradient-accent);
-  color: var(--color-text-on-accent);
-  border-radius: var(--radius-full);
-  box-shadow: var(--shadow-md);
+  background: var(--gradient-brand);
+  color: var(--color-text-on-brand);
+  box-shadow: var(--shadow-md), var(--shadow-glow-emerald);
 }
 
 .btn-primary:hover {
   background: var(--color-emerald-700);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-lg), var(--shadow-glow-emerald);
   transform: translateY(-2px);
 }
 
@@ -413,15 +458,15 @@ body {
 .btn-secondary {
   padding: var(--space-4) var(--space-8);
   background: transparent;
-  color: var(--color-emerald-600);
-  border: 2px solid var(--color-emerald-600);
+  color: var(--color-emerald-400);
+  border: 2px solid var(--color-emerald-500);
   border-radius: var(--radius-full);
 }
 
 .btn-secondary:hover {
-  background: var(--color-emerald-50);
-  color: var(--color-emerald-700);
-  border-color: var(--color-emerald-700);
+  background: var(--color-bg-accent-light);
+  color: var(--color-emerald-300);
+  border-color: var(--color-emerald-400);
   transform: translateY(-2px);
 }
 
@@ -464,7 +509,7 @@ body {
   font-size: var(--text-sm);
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-emerald-600);
+  color: var(--color-emerald-400);
   margin-bottom: var(--space-4);
 }
 
@@ -474,7 +519,7 @@ body {
   font-size: var(--text-3xl);
   line-height: 1.2;
   letter-spacing: -0.01em;
-  color: var(--color-text-brand);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-4);
 }
 
@@ -504,16 +549,16 @@ body {
   align-items: start;
   max-width: 1000px;
   margin: 0 auto;
-  background: var(--color-bg-card);
+  background: var(--gradient-card);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-xl);
   padding: var(--space-10);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
   transition: box-shadow var(--transition-smooth), border-color var(--transition-smooth);
 }
 
 .doctor-card:hover {
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-xl), var(--shadow-glow-emerald);
   border-color: var(--color-border-muted);
 }
 
@@ -524,7 +569,7 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--gradient-accent);
+  background: var(--gradient-brand);
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
@@ -535,9 +580,9 @@ body {
   height: 280px;
   margin: 0 auto;
   justify-self: center;
-  background: var(--gradient-accent-light);
+  background: var(--color-bg-accent-light);
   border-radius: 50%;
-  border: 3px solid var(--color-white);
+  border: 3px solid var(--color-gray-850);
   box-shadow: 
     0 0 0 1px var(--color-border-subtle),
     var(--shadow-md);
@@ -551,11 +596,7 @@ body {
   font-weight: 700;
   font-size: clamp(3rem, 5vw, 4.5rem);
   letter-spacing: -0.02em;
-  color: var(--color-emerald-600);
-  background: var(--gradient-brand);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-emerald-400);
 }
 
 /* Doctor Content */
@@ -605,8 +646,8 @@ body {
 
 /* Philosophy Quote */
 .doctor-philosophy {
-  background: var(--color-emerald-50);
-  border: 1px solid var(--color-emerald-200);
+  background: var(--color-bg-accent-light);
+  border: 1px solid rgba(16, 185, 129, 0.2);
   border-left: 4px solid var(--color-emerald-500);
   border-radius: var(--radius-lg);
   padding: var(--space-7) var(--space-8);
@@ -617,7 +658,7 @@ body {
   font-weight: 400;
   font-size: var(--text-lg);
   line-height: 1.65;
-  color: var(--color-text-brand);
+  color: var(--color-text-primary);
   font-style: italic;
   position: relative;
   padding-left: var(--space-2);
@@ -630,7 +671,7 @@ body {
   font-style: normal;
   font-size: var(--text-sm);
   font-weight: 500;
-  color: var(--color-navy-600);
+  color: var(--color-emerald-400);
 }
 
 /* ==========================================================================
@@ -640,13 +681,13 @@ body {
   position: relative;
   z-index: var(--z-content);
   padding: var(--space-20) var(--container-padding);
-  background: var(--color-ivory-100);
+  background: var(--color-gray-850);
 }
 
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-7);
+  gap: var(--space-10);
   max-width: 1040px;
   margin: 0 auto;
 }
@@ -656,16 +697,16 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: var(--space-9) var(--space-7);
-  background: var(--color-white);
+  padding: var(--space-10) var(--space-8);
+  background: var(--gradient-card);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   transition: box-shadow var(--transition-smooth), border-color var(--transition-smooth);
 }
 
 .trust-item:hover {
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-emerald-300);
+  box-shadow: var(--shadow-lg), var(--shadow-glow-emerald);
+  border-color: rgba(16, 185, 129, 0.3);
 }
 
 .trust-icon {
@@ -674,25 +715,25 @@ body {
   justify-content: center;
   width: 56px;
   height: 56px;
-  background: var(--color-emerald-50);
-  border: 1px solid var(--color-emerald-200);
+  background: var(--color-bg-accent-light);
+  border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: var(--radius-md);
-  color: var(--color-emerald-600);
+  color: var(--color-emerald-400);
   margin-bottom: var(--space-4);
   transition: all var(--transition-smooth);
 }
 
 .trust-item:hover .trust-icon {
-  background: var(--color-emerald-100);
-  border-color: var(--color-emerald-300);
+  background: rgba(16, 185, 129, 0.15);
+  border-color: var(--color-emerald-500);
 }
 
 .trust-title {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: var(--text-lg);
-  color: var(--color-text-brand);
-  margin-bottom: var(--space-3);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-4);
 }
 
 .trust-desc {
@@ -715,7 +756,7 @@ body {
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-7);
+  gap: var(--space-10);
   max-width: 1120px;
   margin: 0 auto;
 }
@@ -725,15 +766,15 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: var(--space-9) var(--space-7);
-  background: var(--color-white);
+  padding: var(--space-10) var(--space-8);
+  background: var(--gradient-card);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-lg);
   transition: box-shadow var(--transition-smooth), border-color var(--transition-smooth);
 }
 
 .contact-card:hover {
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-lg), var(--shadow-glow-emerald);
   border-color: var(--color-border-muted);
 }
 
@@ -743,17 +784,17 @@ body {
   justify-content: center;
   width: 56px;
   height: 56px;
-  background: var(--color-navy-50);
-  border: 1px solid var(--color-navy-100);
+  background: rgba(48, 54, 61, 0.5);
+  border: 1px solid var(--color-gray-700);
   border-radius: var(--radius-md);
-  color: var(--color-navy-600);
+  color: var(--color-emerald-400);
   margin-bottom: var(--space-4);
   transition: all var(--transition-smooth);
 }
 
 .contact-card:hover .contact-icon {
-  background: var(--color-navy-100);
-  border-color: var(--color-navy-200);
+  background: var(--color-gray-750);
+  border-color: var(--color-emerald-500);
 }
 
 .contact-info { width: 100%; }
@@ -762,8 +803,8 @@ body {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: var(--text-lg);
-  color: var(--color-text-brand);
-  margin-bottom: var(--space-3);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-4);
 }
 
 .contact-value {
@@ -774,15 +815,15 @@ body {
   color: var(--color-text-secondary);
   text-decoration: none;
   transition: color var(--transition-fast);
+  margin-bottom: var(--space-3);
 }
 
-.contact-value:hover { color: var(--color-emerald-600); }
-
-.contact-value address { font-style: normal; }
+.contact-value address {
+  font-style: normal;
+}
 
 .contact-hours {
   display: block;
-  margin-top: var(--space-2);
   font-family: var(--font-body);
   font-size: var(--text-sm);
   font-weight: 400;
@@ -797,13 +838,13 @@ body {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: var(--text-sm);
-  color: var(--color-emerald-600);
+  color: var(--color-emerald-400);
   text-decoration: none;
   transition: all var(--transition-fast);
 }
 
 .contact-link:hover {
-  color: var(--color-emerald-700);
+  color: var(--color-emerald-300);
   gap: var(--space-3);
 }
 
@@ -814,7 +855,7 @@ body {
   position: relative;
   z-index: var(--z-content);
   padding: var(--space-20) var(--container-padding);
-  background: var(--color-ivory-100);
+  background: var(--color-gray-850);
 }
 
 .cta2-content { text-align: center; max-width: 720px; margin: 0 auto; }
@@ -824,7 +865,7 @@ body {
   font-weight: 700;
   font-size: var(--text-3xl);
   line-height: 1.25;
-  color: var(--color-text-brand);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-5);
 }
 
@@ -848,7 +889,7 @@ body {
   z-index: var(--z-content);
   padding: var(--space-18) var(--container-padding) var(--space-10);
   border-top: 1px solid var(--color-border-subtle);
-  background: var(--color-white);
+  background: var(--color-gray-900);
 }
 
 .footer-inner {
@@ -872,17 +913,20 @@ body {
   width: 48px;
   height: 48px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(6, 17, 34, 0.06));
+  filter: drop-shadow(0 4px 16px rgba(16, 185, 129, 0.1));
 }
 
-.footer-brand-text { text-align: left; }
+.footer-brand-text { 
+  text-align: center; 
+  margin-top: 4px;
+}
 
 .footer-name {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: var(--text-xl);
   letter-spacing: -0.01em;
-  color: var(--color-text-brand);
+  color: var(--color-text-primary);
   line-height: 1.2;
 }
 
@@ -895,7 +939,11 @@ body {
   text-transform: uppercase;
 }
 
-.footer-social { margin-top: var(--space-2); }
+.footer-social { 
+  margin-top: var(--space-2); 
+  display: flex;
+  justify-content: center;
+}
 
 .social-link {
   display: inline-flex;
@@ -903,7 +951,7 @@ body {
   justify-content: center;
   width: 48px;
   height: 48px;
-  background: var(--color-ivory-100);
+  background: var(--color-gray-850);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-full);
   color: var(--color-text-tertiary);
@@ -911,9 +959,9 @@ body {
 }
 
 .social-link:hover {
-  background: var(--color-emerald-50);
-  border-color: var(--color-emerald-300);
-  color: var(--color-emerald-600);
+  background: var(--color-bg-accent-light);
+  border-color: var(--color-emerald-500);
+  color: var(--color-emerald-400);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -945,7 +993,7 @@ body {
   font-size: var(--text-sm);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-navy-600);
+  color: var(--color-gray-500);
 }
 
 /* ==========================================================================
@@ -973,8 +1021,8 @@ body {
   }
   
   .hero { 
-    min-height: auto; 
-    padding: var(--space-16) var(--container-padding) var(--space-12); 
+    min-height: auto;
+    padding: var(--space-16) var(--container-padding) var(--space-12);
   }
   
   .logo-mark { width: 80px; height: 80px; }
@@ -1009,29 +1057,29 @@ body {
   
   .credential { font-size: var(--text-xs); }
   
-  .trust-item, .contact-card { padding: var(--space-7) var(--space-5); }
+  .trust-item, .contact-card { padding: var(--space-10) var(--space-8); }
 }
 
 /* ==========================================================================
    PRINT STYLES
    ========================================================================== */
 @media print {
-  .skip-link, .btn, .cta-primary, .cta-secondary, .footer-social, .social-link { display: none !important; }
+  .skip-link, .btn, .cta-primary, .cta-secondary, .footer-social, .social-link, .ambient-bg, .scroll-indicator { display: none !important }
   
-  body { background: white !important; color: black !important; background-image: none !important; }
+  body { background: white !important; color: black !important; background-image: none !important }
   
-  .hero, .about-doctor, .contact, .trust-indicators { page-break-inside: avoid; }
+  .hero, .about-doctor, .contact, .trust-indicators { page-break-inside: avoid }
   
-  .hero { border-bottom: 2px solid #000 !important; }
+  .hero { border-bottom: 2px solid #000 !important }
   
-  .doctor-card, .contact-card, .trust-item { border: 1px solid #ccc !important; box-shadow: none !important; background: white !important; }
+  .doctor-card, .contact-card, .trust-item { border: 1px solid #ccc !important; box-shadow: none !important; background: white !important }
   
-  .hero-title, .section-title, .footer-name { color: black !important; }
+  .hero-title, .section-title, .footer-name { color: black !important }
   
-  .hero-tagline, .section-tag { color: black !important; }
+  .hero-tagline, .section-tag { color: black !important }
   
-  .btn-primary { background: black !important; color: white !important; border: 2px solid black !important; }
+  .btn-primary { background: black !important; color: white !important; border: 2px solid black !important }
   
-  a[href^="tel:"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #666; }
-  a[href^="mailto:"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #666; }
+  a[href^="tel:"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #666 }
+  a[href^="mailto:"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #666 }
 }
